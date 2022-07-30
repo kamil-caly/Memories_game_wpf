@@ -1,0 +1,120 @@
+﻿<Window x:Class="Memories_wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Memories_wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="700"
+        FontSize="30" FontFamily="Comic Sans MS"
+        Background="LawnGreen"
+        Loaded="Window_Loaded"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="ScoreBlock" Text="Score: 0"
+                   Grid.ColumnSpan="3"
+                   Grid.Column="1"
+                   Padding="25"
+                   FontWeight="Bold"
+                   Foreground="DarkRed"
+                   FontSize="40"/>
+
+        <TextBlock x:Name="GuessBlock" Text="Guess: 0"
+                   Grid.ColumnSpan="3"
+                   Grid.Column="3"
+                   Padding="25"
+                   FontWeight="Bold"
+                   Foreground="DarkRed"
+                   FontSize="40"/>
+
+        <Button x:Name="playAgainButton"
+                Content="Play Again"
+                Grid.Row="4"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Margin="30"
+                Visibility="Hidden"
+                Click="playAgainButton_Click"/>
+
+        <!-- setting all image fields -->
+        <Image x:Name="img1" 
+               Grid.Row="1"
+               Grid.Column="1"
+               Source="img/blank.png" MouseDown="imgClick"/>
+
+        <Image x:Name="img2" 
+               Grid.Row="1"
+               Grid.Column="2"
+               Source="img/blank.png" MouseDown="imgClick"/>
+
+        <Image x:Name="img3" 
+               Grid.Row="1"
+               Grid.Column="3"
+               Source="img/blank.png" MouseDown="imgClick"/>
+
+        <Image x:Name="img4" 
+               Grid.Row="1"
+               Grid.Column="4"
+               Source="img/blank.png" MouseDown="imgClick"/>
+
+        <Image x:Name="img5" 
+               Grid.Row="2"
+               Grid.Column="1"
+               Source="img/blank.png" MouseDown="imgClick"/>
+
+        <Image x:Name="img6" 
+               Grid.Row="2"
+               Grid.Column="2"
+               Source="img/blank.png" MouseDown="imgClick"/>
+
+        <Image x:Name="img7" 
+               Grid.Row="2"
+               Grid.Column="3"
+               Source="img/blank.png" MouseDown="imgClick"/>
+
+        <Image x:Name="img8" 
+               Grid.Row="2"
+               Grid.Column="4"
+               Source="img/blank.png" MouseDown="imgClick"/>
+
+        <Image x:Name="img9" 
+               Grid.Row="3"
+               Grid.Column="1"
+               Source="img/blank.png" MouseDown="imgClick"/>
+
+        <Image x:Name="img10" 
+               Grid.Row="3"
+               Grid.Column="2"
+               Source="img/blank.png" MouseDown="imgClick"/>
+
+        <Image x:Name="img11" 
+               Grid.Row="3"
+               Grid.Column="3"
+               Source="img/blank.png" MouseDown="imgClick"/>
+
+        <Image x:Name="img12" 
+               Grid.Row="3"
+               Grid.Column="4"
+               Source="img/blank.png" MouseDown="imgClick"/>
+
+
+    </Grid>
+</Window>
